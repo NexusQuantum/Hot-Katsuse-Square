@@ -1,24 +1,87 @@
-header {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html::-webkit-scrollbar{
+  display: none;
+}
+
+.loading-CSS {
+  font-size: xxx-large;
+  position: absolute;
+  top: 25.6%;
+  left: 41.1%;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Loading Block */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #0bd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+/* Loading Animation */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/* Hide Loading Block */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header {
   width: 100%;
   margin: 20px 20px 0px 0px;
   padding: 20px;
   display: block;
-  background-image: url(yumekawab01_.jpg);
+  background-image: url(boyake_yumekawa.png); 
+  border-radius: 50px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  width: 99%;
+  animation: fadeIn 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
 
+.is-animated {
+  animation: fadeIn 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 .title {
-  text-align: center;
   color: green;
   font-size: xxx-large;
+  text-align: center;
 }
 
 .subtitle {
   text-align: center;
-  color: red;
+  color: green;
 }
 
 main {
@@ -26,6 +89,7 @@ main {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  animation: fadeIn 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 .setumei {
@@ -64,10 +128,13 @@ main {
   color: pink;
   margin-top: 100px;
   padding-top: 50px;
-  border-top: 5px solid green;
 }
 
-
+.server_input_tag {
+  padding-right: 300px;
+  margin-left: 20%;
+  border-left: 5px solid green;
+}
 
 .server_input_tag_setumei-css {
   text-align: center;
