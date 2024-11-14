@@ -11,15 +11,6 @@ html::-webkit-scrollbar{
   display: none;
 }
 
-.loading-CSS {
-  font-size: xxx-large;
-  position: absolute;
-  top: 25.6%;
-  left: 41.1%;
-  padding: 20px;
-  margin: 20px;
-}
-
 /* Loading Block */
 #loading {
   width: 100vw;
@@ -84,7 +75,7 @@ html::-webkit-scrollbar{
   color: green;
 }
 
-main {
+main { /* メインタグスタイル */
   background-image: url(kirakirashiro22.png);
   background-attachment: fixed;
   background-size: cover;
@@ -92,25 +83,17 @@ main {
   animation: fadeIn 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-.setumei {
+.explanation {
   display: flex;
 }
 
-.setumei-2 {
-  display: flex;
-}
-
-.heart_img {
+.heart_img { /* heart画像のスタイル */
   margin-top: 50px;
   margin-left: 6.7%;
   padding-right: 50px;
 }
 
-.heart_img2 {
-  display: none;
-}
-
-.setumei-main {
+.explanation-main {
   display: block;
   margin-top: 150px;
   padding-left: 150px;
@@ -118,25 +101,17 @@ main {
 
 }
 
-.setumei_title {
+.explanation_title {
   color: green;
   text-align: center;
-}
-
-.title-setumei {
-  text-align: center;
-  color: pink;
-  margin-top: 100px;
-  padding-top: 50px;
+  display: block;
 }
 
 .server_input_tag {
-  padding-right: 300px;
-  margin-left: 20%;
-  border-left: 5px solid green;
+  text-align: center;
 }
 
-.server_input_tag_setumei-css {
+.server_input_tag_explanation-css {
   text-align: center;
 }
 
@@ -145,31 +120,24 @@ main {
     display: none;
   }
 
+  .server_input_tag {
+    padding-right: 300px;
+    margin-left: 20%;
+  }
+
   .kaigyou::after{
     content:"\A";
     white-space:pre;
    }
-
-   .kaigyou2::after{
-    content:"\A";
-    white-space:pre;
-   }
    
-   .setumei {
+   .explanation {
     display: block;
    }
 
-   .heart_img2 {
-    display: block;
-    width: 170px;
-    height: 150px;
-   }
-
-   .setumei-main {
+   .explanation-main {
     display: block;
     margin-top: 140px;
     padding-left: 30px;
     border-left: 5px solid green;
-  
   }
 }
